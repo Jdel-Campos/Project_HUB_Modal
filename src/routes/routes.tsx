@@ -5,7 +5,7 @@ import { LoginPage } from "../pages/LoginPage/login";
 import { RegisterPage } from "../pages/RegisterPage/register";
 import { ErrorPage } from "../pages/ErrorPage/error";
 
-const Router = () => {
+export const Router = () => {
     return(
         <Routes>
             <Route path="/" element={<HomePage/>}/>
