@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledSectionProducts = styled.section`
-    margin: 57px 70px;
+    margin: 30px 20px;
 
     h2{
         margin-bottom: 20px;
         
-        font-size: 1.75rem;
+        font-size: 1.125rem;
         font-weight: 600;
     }
     

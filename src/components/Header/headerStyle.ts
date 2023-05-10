@@ -7,6 +7,8 @@ interface IStyledLink {
 export const StyledHeaderContainer = styled.header`
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
 
+    position: relative;
+
 `
 
 export const StyledHeader = styled.div`
@@ -14,9 +16,9 @@ export const StyledHeader = styled.div`
     justify-content: space-between;
     align-items: center;
     
-    height: 80px;
+    padding: 0 15px;
+    height: 60px;
 
-    padding: 0 100px;
     background-color: #3d3d3d;
 
     position: relative;
@@ -24,7 +26,7 @@ export const StyledHeader = styled.div`
     h1{
         font-family: 'Merienda', cursive;
         color: white;
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 400;
     }
 
@@ -35,56 +37,138 @@ export const StyledHeader = styled.div`
 
         h4{
             color: white;
+            font-size: 0.75rem;
         }
     }
 
     .line__one{
-        width: 130px;
+        width: 90px;
 
         position: absolute;
-        top: 42px;
+        top: 29px;
     }
 
     .line__two{
-        width: 130px;
+        width: 90px;
 
         position: absolute;
-        top: 47px;
-        right: 440px;
+        top: 34px;
+        right: 46px;
+    }
+
+    @media (min-width: 425px){
+        padding: 0 40px;
+
+        .line__two{
+            right: 71px;
+        }
+    }
+
+    @media (min-width: 450px){
+        height: 80px;
+
+        padding: 0 100px;
+
+        h1{
+            font-size: 2rem;
+
+        }
+
+        .header__fix{
+            h4{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media (min-width: 728px){
+        padding: 0 40px;
+
+        .line__two{
+            width: 130px;
+            right: 71px;
+        }
     }
 `
 
 export const StyledHeaderMobile = styled.div`
+    margin-top: 5px;
 
-    height: 150px;
+/*     position: fixed;
+    top: 0;
+
+    z-index: 1;
+
+    width: 100vw;
+    height: 110px;
+
+    background-color: white; */
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+
+    
+    a{
+        color: #3d3d3d;
+        text-decoration: none;
+    }
 
     .container__header{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 100px;
-        margin-bottom: 15px;
-    }
 
-    .logo{
-        height: 60px;
-        width: 60px;
+        margin-bottom: 10px;
+
+        width: 90%;
+
+        .container__menuBurger{
+            figure{
+                width: 35px;
+                height: 35px;
+
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
     }
     
     .user{
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+
+        figure{
+            height: 25px;
+            width: 25px;
+
+            img{
+                height: 25px;
+                width: 25px;
+            }
+        }
     }
 
     .user__enter{
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        figure{
+            height: 35px;
+            width: 35px;
+
+            img{
+                height: 35px;
+                width: 35px;
+            }
+        }
     }
 
     hr{

@@ -6,16 +6,20 @@ import { NavigatorMenuImage } from "../../components/NavigatorMenu/NavigationIma
 import { SectionProducts } from "../../components/SectionsProducts/sectionProducts"
 import { Footer } from "../../components/Footer/footer"
 import { Information } from "../../components/Information/information"
+import { ModalProviders } from "../../providers/ModalProviders/modalContext"
 
 export const HomePage = () => {
     
     return(
         <>
-            <Header />
+            <ModalProviders>
+                <Header />
+            </ModalProviders>
             <BannerImage />
             <BrandList />
             <NavigatorMenuImage />
             <Information />
+
             <SectionProducts title={ "New in store" } />
             <BannerImage />
             <SectionProducts title={ "The best deals" } />

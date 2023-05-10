@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import { StyledPayments } from "./paymentsStyled"
 
 export const Payments = () => {
@@ -9,25 +8,19 @@ export const Payments = () => {
                 <h3> Forms of Payment </h3>
                 <ul>
                     <li> 
-                        <Link to={""} > 
-                            <figure>
-                                <img src="" alt="Amex" />
-                            </figure>
-                        </Link>
+                        <figure>
+                            <img src="" alt="Amex" />
+                        </figure>
                     </li>
                     <li> 
-                        <Link to={""} > 
-                            <figure>
-                                <img src="" alt="Master Card" />
-                            </figure>
-                        </Link>
+                        <figure>
+                            <img src="" alt="Master Card" />
+                        </figure>
                     </li>
                     <li> 
-                        <Link to={""} > 
-                            <figure>
-                                <img src="" alt="Visa" />
-                            </figure>
-                        </Link>
+                        <figure>
+                            <img src="" alt="Visa" />
+                         </figure>
                     </li>
                 </ul>
         </StyledPayments>

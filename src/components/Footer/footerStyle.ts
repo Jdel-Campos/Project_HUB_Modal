@@ -16,8 +16,10 @@ export const StyledFooter = styled.div`
         height: 70px;
         background-color: #E8E8E8;
 
+        padding: 0 50px;
+
         h4{
-            font-size: 1.25rem;
+            font-size: 0.875rem;
             font-weight: 300;
         }
     }
@@ -27,8 +29,9 @@ export const StyledFooter = styled.div`
 export const StyledFooterInformation = styled.div`
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 
-    height: 350px;
 
     background-color: #E8E8E8;
 `
